@@ -13,11 +13,19 @@
       color: #333;
       line-height: 1.7;
     }
-    header, footer {
+     header.top-bar {
       background-color: #1a73e8;
       color: #fff;
       padding: 15px 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    header .logo {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
     }
     main {
       max-width: 900px;
@@ -44,10 +52,10 @@
 </head>
 <body>
 
-<header>
-  <h2>Sprompt – Privacy Policy</h2>
+<header class="top-bar">
+  <span class="logo">Sprompt – Privacy Policy</span>
 </header>
-
+  
 <main>
   <h1>Privacy Policy</h1>
   <p><strong>Effective Date:</strong> 31 December 2025</p>
